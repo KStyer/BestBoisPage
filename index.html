@@ -1,63 +1,133 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-<style>
-.image-size500 {
-    width: 300px;
-}
-</style>
+    <style>
+        .image-size500 {
+            width: 300px;
+        }
+
+        .thin-black-border {
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .medgray-background {
+            background-color: #696c75
+        }
+
+        @font-face {
+            font-family: 'note_thisregular';
+            src: url('/Fonts/note_this-webfont.woff2') format('woff2');
+
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .flexboxrow1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        /* .list {
+    display: flex;
+    flex-direction: column;
+} */
+
+        body {
+            background-color: #40424b;
+        }
+
+        h1 {
+            color: #D3D3D3;
+            font-family: note_thisregular;
+            text-align: center;
+        }
+
+        p {
+            color: #D3D3D3;
+            font-family: helvetica;
+        }
+
+        ul {
+            color: #D3D3D3;
+            font-family: Trebuchet MS;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 
 </head>
 
-<h1>
+<h1 class="thin-black-border medgray-background">
+
     The Best Bois with a Basketball
+
 </h1>
+<hr>
 <div>
-<p>
-Vermin are a man's best friend. No, really!
-Rats are a highly underrated companion animal. Capable of puzzle solving and eager to impress, rats give dogs a run for their money in trick training.
-They are social creatures that bond readily with humans and enjoy play, cuddles, and competitive challenges. 
+    <p>
+        Vermin are a man's best friend. No, really!
+        Rats are a highly underrated companion animal. Capable of puzzle solving and eager to impress, rats give dogs a
+        run for their money in trick training.
+        They are social creatures that bond readily with humans and enjoy play, cuddles, and competitive challenges.
 
-</p>
-<p>
-    One such competition that rats can participate in is basketball. A few colleges have trained rat basketball teams who compete in tournaments. 
-    While our team never competed against opposing teams, they are a great example of how you can train your new favorite pets at home. Let's introduce our boys.
-    
-</p>
-<img class="image-size500" src="Img/TheFour.jpg">
+    </p>
+    <p>
+        One such competition that rats can participate in is basketball. A few colleges have trained rat basketball
+        teams who compete in tournaments.
+        While our team never competed against opposing teams, they are a great example of how you can train your new
+        favorite pets at home. Let's introduce our boys.
 
-<p>In order from left to right, we have:</p>
-<ul>
-    <li> Oslo </li>
-    <li> Eero </li>
-    <li> Yannick </li>
-    <li> Mies </li>
-</ul>
-<p>
-    Mies was the most driven and accurate out of the group. Yannick was right behind him, always keeping up with Mies. Eero scored enough baskets to prove he could do it, but preferred to drink tea and watch. Oslo loved stealing the ball and keeping the game exciting for the others.
-</p>
+    </p>
+    <div class="flexboxrow1">
 
-<p> Here is a video of them playing basketball together. Mies and Yannick are on one team, while Eero and Oslo are on the other team.
-</p>
+        <div class="list">In order from left to right, we have:
+            <ul>
+                <li> Oslo </li>
+                <li> Eero </li>
+                <li> Yannick </li>
+                <li> Mies </li>
+            </ul>
+        </div>
+        <div>
+        <img class="thin-black-border image-size500" src="Img/TheFour.jpg">
+        </div>
+        <div>
+        <p>
+            Mies was the most driven and accurate out of the group. Yannick was right behind him, always keeping up with
+            Mies. Eero scored enough baskets to prove he could do it, but preferred to drink tea and watch. Oslo loved
+            stealing the ball and keeping the game exciting for the others.
+        </p>
+        </div>
+    </div>
 
-<p>
+    <hr>
+    <p> Here is a video of them playing basketball together. Mies and Yannick are on one team, while Eero and Oslo are
+        on the other team.
+    </p>
 
-<video width=600px controls="controls">
-<source src="C:\Users\fuzzy\Desktop\Projects\BestBoisPage\Videos\BB1.mp4" type="video/mp4">
-</video>
-</p>
-<p>
-    They love treats!
-    <a href="Treats/Cheerios.html">Like These</a>
-</p>
-<p>
-    Finally, before you go, here is a 
-<a href="https://www.facebook.com/Tyla/posts/8208045442570821">link</a>
-to another great video about rats as companion animals. (Video not owned by me.)
+    <p>
+        <center>
+            <video class=thin-black-border width=600px controls="controls">
+                <source src="C:\Users\fuzzy\Desktop\Projects\BestBoisPage\Videos\BB1.mp4" type="video/mp4">
+            </video>
+        </center>
+    </p>
+    <p>
+        They love treats!
+        <a href="Treats/Cheerios.html">Like These</a>
+    </p>
+    <p>
+        Finally, before you go, here is a
+        <a href="https://www.facebook.com/Tyla/posts/8208045442570821">link</a>
+        to another great video about rats as companion animals. (Video not owned by me.)
 
-</p>
+    </p>
 
 </div>
+
 </html>
