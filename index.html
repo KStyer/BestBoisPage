@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html>
+<style>
+    .image-size500 {
+        width: 100%;
+    }
 
-<head>
+    .thin-black-border {
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+    }
 
-    <style>
-        .image-size500 {
-            width: 300px;
-        }
+    .medgray-background {
+        background-color: #696c75
+    }
 
-        .thin-black-border {
-            border-color: black;
-            border-width: 2px;
-            border-style: solid;
-        }
+    @font-face {
+        font-family: 'note_thisregular';
+        src: url('/Fonts/note_this-webfont.woff2') format('woff2');
 
-        .medgray-background {
-            background-color: #696c75
-        }
+        font-weight: normal;
+        font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'note_thisregular';
-            src: url('/Fonts/note_this-webfont.woff2') format('woff2');
+    .flexboxrow1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-            font-weight: normal;
-            font-style: normal;
-        }
+    .item {
+        width: 200px;
+    }
 
-        .flexboxrow1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        /* .list {
+    /* .list {
     display: flex;
     flex-direction: column;
 } */
 
-        body {
-            background-color: #40424b;
-        }
+    body {
+        background-color: #40424b;
+    }
 
-        h1 {
-            color: #D3D3D3;
-            font-family: note_thisregular;
-            text-align: center;
-        }
+    h1 {
+        color: #D3D3D3;
+        font-family: note_thisregular;
+        text-align: center;
+    }
 
-        p {
-            color: #D3D3D3;
-            font-family: helvetica;
-        }
+    p {
+        color: #D3D3D3;
+        font-family: helvetica;
+    }
 
-        ul {
-            color: #D3D3D3;
-            font-family: Trebuchet MS;
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
+    ul {
+        color: #D3D3D3;
+        font-family: Trebuchet MS;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
 
+<head>
 </head>
 
 <h1 class="thin-black-border medgray-background">
@@ -85,7 +87,10 @@
     </p>
     <div class="flexboxrow1">
 
-        <div class="list">In order from left to right, we have:
+        <div class="item">
+            <p>
+                In order from left to right, we have:
+            </p>
             <ul>
                 <li> Oslo </li>
                 <li> Eero </li>
@@ -93,15 +98,17 @@
                 <li> Mies </li>
             </ul>
         </div>
-        <div>
-        <img class="thin-black-border image-size500" src="Img/TheFour.jpg">
+        <div class="item">
+            <img class="thin-black-border image-size500" src="Img/TheFour.jpg">
         </div>
-        <div>
-        <p>
-            Mies was the most driven and accurate out of the group. Yannick was right behind him, always keeping up with
-            Mies. Eero scored enough baskets to prove he could do it, but preferred to drink tea and watch. Oslo loved
-            stealing the ball and keeping the game exciting for the others.
-        </p>
+        <div class="item">
+            <p>
+                Mies was the most driven and accurate out of the group. Yannick was right behind him, always keeping up
+                with
+                Mies. Eero scored enough baskets to prove he could do it, but preferred to drink tea and watch. Oslo
+                loved
+                stealing the ball and keeping the game exciting for the others.
+            </p>
         </div>
     </div>
 
